@@ -1,0 +1,25 @@
+inpaintGrayImage.m	- main program
+OnionPeel.m		- for peeling the pixels from fillfront
+Neighbours.m		- for extracting the neighbouring patches
+SimilarityMeasure.m	- for find the similarity between patches (in the paper its denoted by Rho)
+distance.m		- for calculating distance between patches (which is used in the equation for finding  Wppj)
+WPPj.m			- for finding the Wppj value corresponding to all the j's (its output is a vector)
+wppj.m			- for finding the Wppj value for one j (Its output is value)
+PsiT.m			- Psit value as in the equation 9 in the literature.
+Dmatirx.m		- D value as in equation 9
+Epsilon.m		- epsilon value as in the equation 8
+Alpha.m			- alpha value using the equation 15 in the literature	
+
+[I the drop menu 'select coordinates for inpainting'- you have to give the 
+X1 -- row1
+X2 -- row2
+Y1 -- col1
+Y2 -- col2
+values, as shown i the figure. And you will get a square patch.]	 
+
+	Y1	Y2
+X1------|--------|----
+--------|--------|----
+--------|--------|----
+--------|--------|----
+X2------|--------|----
